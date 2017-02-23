@@ -12,20 +12,22 @@ namespace example1 {
     void example() {
         //pointers basic 1
         //TODO 1 - create var1 of type int
+      int var1;
         //TODO 1 - create a character array var2 that can hold 10 elements
-
+      char var2[10];
 
         //TODO 1
         cout << "Size of var1 variable: ";
-
+        cout << sizeof(var1) << endl;
         //TODO 1
         cout << "Size of var2 variable: ";
-
+        cout << sizeof(var2) << endl;
         //TODO 1
         cout << "Address of var1 variable: ";
-
+        cout << &(var1) << endl;
         //TODO 1
         cout << "Address of var2 variable: ";
+        cout << &(var2) << endl;
 
     }
 }
@@ -35,24 +37,25 @@ namespace example2 {
         //pointers basic 2
         //TODO 2 - create a integer variable var holding some value
         //TODO 2 - create a pointer of type int
-
+      int var = 1;
+      int* intPtr;
         //TODO 2 - store address of var into pointer
-
+      intPtr = &(var);
         //TODO 2
-        cout << "Value of var variable: ";
+        cout << "Value of var variable: " << var << endl;
 
         //TODO 2 // print the address stored in ip pointer variable
-        cout << "Address stored in ip variable: ";
+        cout << "Address stored in ip variable: " << intPtr << endl;
 
         //TODO 2// access the value at the address available in pointer
-        cout << "Value of *ip variable: ";
+        cout << "Value of *ip variable: " << *(intPtr) << endl;
 
         //TODO 2
-        cout << "Address of *ip variable: ";
+        cout << "Address of *ip variable: " << &(intPtr) << endl;
 
         //TODO 2 - set the pointer to null pointer
-
-        cout << "The value of ptr is ";
+        intPtr = NULL;
+        cout << "The value of ptr is " << intPtr << endl;
     }
 }
 
@@ -301,8 +304,8 @@ namespace example13 {
 
 int main() {
 
-    //example1::example();
-    //example2::example();
+    example1::example();
+    example2::example();
     //example3::example();
     //example4::example();
     //example5::example();
