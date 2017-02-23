@@ -65,18 +65,21 @@ namespace example3 {
 
         //TODO 3 - integer array of size MAX
         //TODO 3 - integer pointer
+        int arr[MAX] ={1,2,3};
+        int* ptr;
 
         // let us have array address in pointer.
-
+        ptr =arr;
         //TODO 3 - point pointer to variable
         for (int i = 0; i < MAX; i++) {
             //TODO 3
-            cout << "Address of var[" << i << "] = ";
+            cout << "Address of var[" << i << "] = "<<ptr<<endl;
 
             //TODO 3
-            cout << "Value of var[" << i << "] = ";
+            cout << "Value of var[" << i << "] = "<<*(ptr)<<endl;
 
             //TODO 3// point to the next location
+            ptr++;
         }
     }
 }
@@ -93,10 +96,10 @@ namespace example4 {
 
         for (int i = MAX; i > 0; i--) {
             //TODO 4
-            cout << "Address of var[" << i << "] = ";
+            cout << "Address of var[" << i << "] = "<<endl;
 
             //TODO 4
-            cout << "Value of var[" << i << "] = ";
+            cout << "Value of var[" << i << "] = "<<endl;
 
             //TODO 4
             // point to the previous location
@@ -304,9 +307,9 @@ namespace example13 {
 
 int main() {
 
-    example1::example();
-    example2::example();
-    //example3::example();
+    //example1::example();
+    //example2::example();
+    example3::example();
     //example4::example();
     //example5::example();
     //example6::example();
