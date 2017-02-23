@@ -8,7 +8,7 @@
 #define MAX 3
 using namespace std;
 
-namespace example1 {
+namespace example1 { // Everyone
 void example() {
   //pointers basic 1
   //TODO 1 - create var1 of type int
@@ -32,7 +32,7 @@ void example() {
 }
 }
 
-namespace example2 {
+namespace example2 { // Robert
 void example() {
   //pointers basic 2
   //TODO 2 - create a integer variable var holding some value
@@ -59,7 +59,7 @@ void example() {
 }
 }
 
-namespace example3 {
+namespace example3 { // Sandra
 void example() {
   //pointer addition
 
@@ -83,13 +83,13 @@ void example() {
 }
 }
 
-namespace example4 {
+namespace example4 { // Jon
 void example() {
 
   //pointer subtraction
 
   //TODO 4 - integer array of size MAX
-  int arr[MAX] ={1,2,3};
+  int arr[MAX] = {1,2,3};
   //TODO 4 - integer
   int* ptr;
 
@@ -98,10 +98,10 @@ void example() {
 
   for (int i = MAX; i > 0; i--) {
     //TODO 4
-    cout << "Address of var[" << i << "] = "<< ptr<<endl;
+    cout << "Address of var[" << i << "] = "<< ptr <<endl;
 
     //TODO 4
-    cout << "Value of var[" << i << "] = "<<*ptr<<endl;
+    cout << "Value of var[" << i << "] = "<< *ptr <<endl;
 
     //TODO 4
     // point to the previous location
@@ -110,7 +110,7 @@ void example() {
 }
 }
 
-namespace example5 {
+namespace example5 { // Steve
 void example() {
 
   //comparing pointers
@@ -163,7 +163,7 @@ void example() {
 }
 }
 
-namespace example8 {
+namespace example8 { // Robert
 void example() {
 
   //array of pointers
@@ -180,7 +180,7 @@ void example() {
 }
 }
 
-namespace example9 {
+namespace example9 { // Sandra
 void example() {
 
   //array of names
@@ -195,7 +195,7 @@ void example() {
 }
 }
 
-namespace example10 {
+namespace example10 { // Steve
 void example() {
   int var;
   int *ptr;
@@ -309,23 +309,32 @@ void example() {
 
 
 int main() {
-
+  // Examples with TODO are done by us
   example1::example(); // Everyone
   cout << endl;
   example2::example(); // Robert
   cout << endl;
   example3::example(); // Sandra
   cout << endl;
-  //example4::example(); // Steve
-  //example5::example(); // Jon
-  //example6::example(); // Robert
-  //example7::example(); // Sandra
-  //example8::example(); // Steve
-  //example9::example(); // Jon
-  //example10::example(); // Robert
-  //example11::example(); // Sandra
-  //example12::example(); // Steve
-  //example13::example(); // Jon
+  example4::example(); // Jon
+  cout << endl;
+  example5::example(); // Steve
+  cout << endl;
+  example6::example();
+  cout << endl;
+  example7::example();
+  cout << endl;
+  //example8::example(); // Robert
+  cout << endl;
+  //example9::example(); // Sandra
+  cout << endl;
+  //example10::example(); // Steve
+  cout << endl;
+  example11::example();
+  cout << endl;
+  example12::example();
+  cout << endl;
+  example13::example();
 
 
   return 0;
