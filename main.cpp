@@ -98,10 +98,10 @@ void example() {
 
   for (int i = MAX; i > 0; i--) {
     //TODO 4
-    cout << "Address of var[" << i << "] = "<< ptr <<endl;
+    cout << "Address of var[" << (i-1) << "] = "<< ptr <<endl;
 
     //TODO 4
-    cout << "Value of var[" << i << "] = "<< *ptr <<endl;
+    cout << "Value of var[" << (i-1) << "] = "<< *ptr <<endl;
 
     //TODO 4
     // point to the previous location
@@ -169,13 +169,18 @@ void example() {
   //array of pointers
   int var[MAX] = {10, 100, 200};
   //TODO 8 define an integer pointer of size MAX
+  int * ptr;
 
   for (int i = 0; i < MAX; i++) {
-    //TODO 8// assign the address of integer.
+    //TODO 8 assign the address of integer.
+    ptr = &var[i];
+    ptr++;
   }
+  ptr = ptr - MAX; // Reset to initial address - This goes back 8 bytes
   for (int i = 0; i < MAX; i++) {
     //TODO 8
-    cout << "Value of var[" << i << "] = ";
+    cout << "Value of var[" << i << "] = " << *(ptr) << endl;
+    ptr++;
   }
 }
 }
@@ -310,30 +315,43 @@ void example() {
 
 int main() {
   // Examples with TODO are done by us
+  cout << "Example 1" << endl;
   example1::example(); // Everyone
   cout << endl;
+  cout << "Example 2" << endl;
   example2::example(); // Robert
   cout << endl;
+  cout << "Example 3" << endl;
   example3::example(); // Sandra
   cout << endl;
+  cout << "Example 4" << endl;
   example4::example(); // Jon
   cout << endl;
-  example5::example(); // Steve
+  cout << "Example 5" << endl;
+ //example5::example(); // Steve
   cout << endl;
+  cout << "Example 6" << endl;
   example6::example();
   cout << endl;
+  cout << "Example 7" << endl;
   example7::example();
   cout << endl;
-  //example8::example(); // Robert
+  cout << "Example 8" << endl;
+  example8::example(); // Robert
   cout << endl;
+  cout << "Example 9" << endl;
   //example9::example(); // Sandra
   cout << endl;
+  cout << "Example 10" << endl;
   //example10::example(); // Steve
   cout << endl;
+  cout << "Example 11" << endl;
   example11::example();
   cout << endl;
+  cout << "Example 12" << endl;
   example12::example();
   cout << endl;
+  cout << "Example 13" << endl;
   example13::example();
 
 
