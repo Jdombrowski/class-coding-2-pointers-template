@@ -8,4 +8,4 @@ team work using GitHub via command line.
 Jon Dombrowski,
 Steve Guzman,
 Sandra Lockwood,
-Robert Quinones,
+Robert Quinones
